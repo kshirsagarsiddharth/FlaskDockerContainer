@@ -217,7 +217,7 @@ def preprocess(textdata):
     return preprocessed_texts
 
 
-with open("api/models/pipeline.pickle", "rb") as f:
+with open("pipeline.pickle", "rb") as f:
     loaded_pipe = pickle.load(f)
 
 
