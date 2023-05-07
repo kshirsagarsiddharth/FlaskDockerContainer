@@ -3,6 +3,10 @@ from utilities import predict_pipeline
 
 app = Flask(__name__)
 
+import nltk
+nltk.download('omw-1.4')
+nltk.download('wordnet')
+
 
 @app.route("/predict", methods=["POST","GET"])
 def predict():
